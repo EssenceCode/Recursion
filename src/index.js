@@ -1,4 +1,16 @@
 import DomControl from "./modules/dom";
 import "./style.css";
 
-DomControl()
+
+window.addEventListener("load", () => {
+    const button = document.querySelector(".merge-btn");
+    
+    button.click();
+})
+
+DomControl().showMerge();
+DomControl().showFibs();
+
+
+DomControl().mergeDom();
+DomControl().fibsDom();

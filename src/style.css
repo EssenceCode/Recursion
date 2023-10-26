@@ -3,10 +3,27 @@
     margin: 0;
 }
 
-.wrapper {
+.navi {
+    display: grid;
+    place-content: center;
+    gap: 25px;
+    padding: 25px;
+    background: black;
+    color: aliceblue;
+
+    margin-bottom: 2%;
+}
+
+.wrapper-merge {
+    display: none;
+}
+
+.wrapper-merge-on{
     display: grid;
     place-content: center;
     place-items: center;
+
+    grid-template-columns: 1fr;
 }
 
 .title {
@@ -15,11 +32,15 @@
     padding: 25px;
     text-align: center;
     margin-bottom: 25px;
+
+    width: 100%;
 }
 
 .Rec-mergeSort {
     display: grid;
     gap: 10px;
+
+    margin-top: 2%;
 }
 
 #merge-sort:invalid {
@@ -34,4 +55,27 @@
 
 .results {
     font-size: 2rem;
+}
+
+.wrapper-fibs {
+    display: none;
+}
+
+.wrapper-fibs-on {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 1fr;
+}
+
+.rec-fibs {
+    display: grid;
+    gap: 10px;
+    margin-top: 2%;
+}
+
+.fibs-result {
+    display: grid;
+    place-items: center;
+    gap: 10px;
 }

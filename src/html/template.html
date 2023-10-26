@@ -6,10 +6,16 @@
     <title>Recursion</title>
 </head>
 <body>
-    <div class="title"><h1>MergeSort</h1></div>
-  <div class="wrapper">
-    
-    <div class="Rec-mergeSort">
+    <div class="navi">
+        <div class="navi-name"><h1>Recursion</h1></div>
+        <div class="btn-container">
+            <button class="merge-btn">MergeSort</button>
+            <button class="fibs-btn">Fibonacci</button>
+        </div>
+    </div>
+    <div class="wrapper-merge">
+        <h1>MergeSort</h1>
+        <div class="Rec-mergeSort">
         <div class="mergesort-input">
             <form>
                 <label for="">
@@ -21,7 +27,21 @@
         </div>
         <div class="merge-result"></div>
     </div>
-    <div class="Rec-fibs"></div>
-  </div>
+</div>
+    <div class="wrapper-fibs">
+        <H1>Fibonacci</H1>
+        <div class="rec-fibs">
+            <div class="fibs-input">
+                <form>
+                    <label for="">
+                        <span>Input Number</span>
+                        <input type="text" name="fibs" id="fibs" pattern="^(?:\d+(?:,\d+)*,?)?$" placeholder="">
+                    </label>
+                    <button type="submit" id="fibs-btn">Submit</button>
+                </form>
+            </div>
+        <div class="fibs-result"></div>
+        </div>
+    </div>
 </body>
 </html>
