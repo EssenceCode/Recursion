@@ -79,14 +79,9 @@ function showMerge() {
             fibs.classList.remove("wrapper-fibs-on");
             fibs.classList.add("wrapper-fibs");
 
-        } else {
-            container.classList.remove("wrapper-merge-on");
-            container.classList.add("wrapper-merge");
-
-        }
-        
-    })
-}
+        }; 
+    });
+};
 
 function showFibs() {
     const container = document.querySelector(".wrapper-fibs");
@@ -104,14 +99,10 @@ function showFibs() {
             
             
             container.classList.remove("wrapper-fibs");
-        } else {
-            container.classList.remove("wrapper-fibs-on");
-            container.classList.add("wrapper-fibs");
-
-        }
+        }; 
         
-    })
-}
+    });
+};
 
 
 export default function DomControl() {
